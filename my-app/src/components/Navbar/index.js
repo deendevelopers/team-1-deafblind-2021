@@ -31,9 +31,9 @@ const Navbar = () => {
                 <NavLink to="/signin" activeStyle>
                     Sign In
                 </NavLink>
-                <NavBtn>
-                    <NavBtnLink to="/signup">Sign Up</NavBtnLink>                
-                </NavBtn>
+                <NavLink to="/signup" activeStyle>
+                    Sign Up
+                </NavLink>
             </NavMenu> 
            </Nav> 
         </>
