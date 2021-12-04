@@ -5,7 +5,7 @@ const Suggestions = () => {
   return (
       <GridItem rowSpan={2}  w='100%' pb={10} pl={5} >
     <Center>
-      <Heading  as='h3' mt={10} mb={5}>Here are some volunteer suggestions based on your profile!</Heading>
+      <Heading  as='h3' size='lg'  mt={10} mb={5}>Here are some volunteer suggestions based on your profile!</Heading>
     </Center>
 
     <Grid templateColumns='repeat(1, 1fr)' gap={10} templateRows='repeat(3, 1fr)'>
@@ -26,8 +26,8 @@ const Suggestions = () => {
                 <Center>
                 <Box>
                  <Heading as='h6' size='md' >Kola Tioluwani</Heading>
-                <Text fontSize='lg'>London, United Kingdom</Text>
-                <Text fontSize='lg'>Interests: Sketching, Cycling, Harry Potter, Italian food</Text>
+                <Text fontSize='lg' mt={2}>London, United Kingdom</Text>
+                <Text fontSize='lg' mt={2}>Interests: Sketching, Cycling, Harry Potter, Italian food</Text>
                 </Box>
                 </Center>
                 </Grid>
@@ -53,8 +53,8 @@ const Suggestions = () => {
                 <Center>
                 <Box>
                  <Heading  as='h6' size='md' >Kola Tioluwani</Heading>
-                <Text fontSize='lg'>London, United Kingdom</Text>
-                <Text fontSize='lg'>Interests: Sketching, Cycling, Harry Potter, Italian food</Text>
+                <Text fontSize='lg' mt={2}>London, United Kingdom</Text>
+                <Text fontSize='lg' mt={2}>Interests: Sketching, Cycling, Harry Potter, Italian food</Text>
                 </Box>
                 </Center>
                 </Grid>
@@ -80,8 +80,8 @@ const Suggestions = () => {
                 <Center>
                 <Box>
                  <Heading  as='h6' size='md' >Kola Tioluwani</Heading>
-                <Text fontSize='lg'>London, United Kingdom</Text>
-                <Text fontSize='lg'>Interests: Sketching, Cycling, Harry Potter, Italian food</Text>
+                <Text fontSize='lg' mt={2}>London, United Kingdom</Text>
+                <Text fontSize='lg' mt={2}>Interests: Sketching, Cycling, Harry Potter, Italian food</Text>
                 </Box>
                 </Center>
                 </Grid>
