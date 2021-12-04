@@ -1,14 +1,14 @@
 import React from "react";
-import { Container, VStack, Grid, Box, Heading, Button, Center, Avatar, Text, Image } from '@chakra-ui/react'
+import { Container, GridItem, Grid, Box, Heading, Button, Center, Avatar, Text, Image } from '@chakra-ui/react'
 
 const Suggestions = () => {
   return (
-    <Box w='100%' bg='blue.100'>
+      <GridItem rowSpan={2}  w='100%' pb={10} pl={5} pr={5}>
     <Center>
-      <Heading  as='h2' mt={10} mb={10}>Here are some volunteer suggestions based on your profile!</Heading>
+      <Heading  as='h3' mt={10} mb={10}>Here are some volunteer suggestions based on your profile!</Heading>
     </Center>
 
-    <Grid mb={5} templateColumns='repeat(1, 1fr)' gap={5} templateRows='repeat(3, 1fr)'>
+    <Grid templateColumns='repeat(1, 1fr)' gap={10} templateRows='repeat(3, 1fr)'>
               
                         <Center>
                     <Box>
@@ -16,7 +16,7 @@ const Suggestions = () => {
                     <Grid templateColumns='repeat(2, 1fr)' >
                     <Box>
                     <Center>
-                    <Box boxSize='150px'>
+                    <Box boxSize='125px'>
   <Image src='https://bit.ly/dan-abramov' alt='Dan Abramov' />
 </Box>
                    
@@ -43,7 +43,7 @@ const Suggestions = () => {
                     <Grid templateColumns='repeat(2, 1fr)' >
                     <Box>
                     <Center>
-                    <Box boxSize='150px'>
+                    <Box boxSize='125px'>
   <Image src='https://bit.ly/dan-abramov' alt='Dan Abramov' />
 </Box>
                    
@@ -70,7 +70,7 @@ const Suggestions = () => {
                     <Grid templateColumns='repeat(2, 1fr)' >
                     <Box>
                     <Center>
-                    <Box boxSize='150px'>
+                    <Box boxSize='125px'>
   <Image src='https://bit.ly/dan-abramov' alt='Dan Abramov' />
 </Box>
                    
@@ -95,9 +95,9 @@ const Suggestions = () => {
               
              
               <Center>
-    <Button colorScheme='pink' size='lg'>View all volunteer suggestions</Button>
+              <Button bg='#DA5B4F' color="white" size='lg'  mt={10}>View all volunteer suggestions</Button>
     </Center>
-  </Box>
+  </GridItem>
   );
 };
 
