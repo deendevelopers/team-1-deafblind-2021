@@ -8,6 +8,7 @@ import Signup from './pages/Signup';
 import Signin from './pages/Signin';
 import Profile from "./pages/Profile";
 import Footer from "./components/Footer/Footer";
+import FindVolunteers from "./pages/FindVolunteers";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
          <Route path="/profile" element={<Profile />}/>
          <Route path="/signin" element={<Signin />}/>
          <Route path="/signup" element={<Signup />}/>
+         <Route path='/findvolunteers' element={<FindVolunteers/>}/>
        </Routes>
        </BrowserRouter>
     <Footer />
