@@ -1,9 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-dom-router';
+
+//pages and components
+import Login from './pages/login/Login';
+import Signup from './pages/signup/Signup';
 
 function App() {
   return (
     <div className="App">
+      <BrowserRouter>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -18,6 +24,11 @@ function App() {
           Learn React
         </a>
       </header>
+      <Routes>
+         <Route path="/login" element={<Login />}/>
+         <Route path="/signup" element={<Signup />}/>
+      </Routes>
+    </BrowserRouter>
     </div>
   );
 }
