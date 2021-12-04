@@ -5,7 +5,7 @@ import Connection from "./Connection";
 const Connections = () => {
   return (
     <GridItem w='100%' pb={10} pl={5} pr={5}>
-      <Heading as='h3' mt={10} mb={5} >My connections</Heading>
+      <Heading as='h3' size='lg'  mt={10} mb={5} >My connections</Heading>
      <Connection />
       <Center>
         <Button bg='#DA5B4F' color="white" size='lg' mt={10}>View all connections</Button>

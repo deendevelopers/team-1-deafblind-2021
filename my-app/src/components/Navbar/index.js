@@ -32,7 +32,7 @@ const Navbar = () => {
                     Sign In
                 </NavLink>
                 <NavBtn>
-                    <NavBtnLink to="/sign-up">Sign Up</NavBtnLink>                
+                    <NavBtnLink to="/sign-up" activeStyle>Sign Up</NavBtnLink>                
                 </NavBtn>
             </NavMenu> 
            </Nav> 
