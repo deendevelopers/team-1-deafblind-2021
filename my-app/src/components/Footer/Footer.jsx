@@ -1,10 +1,13 @@
+import { Container, Text, Center } from "@chakra-ui/layout";
 import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <p className="footer--description">Team 1 | Deen Developers Hackathon 2021</p>
-    </footer>
+    <Container>
+      <Center>
+      <Text>Team 1 | Deen Developers Hackathon 2021</Text>
+      </Center>
+    </Container>
   );
 };
 
