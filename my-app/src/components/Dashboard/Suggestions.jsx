@@ -3,9 +3,9 @@ import { Container, GridItem, Grid, Box, Heading, Button, Center, Avatar, Text, 
 
 const Suggestions = () => {
   return (
-      <GridItem rowSpan={2}  w='100%' pb={10} pl={5} pr={5}>
+      <GridItem rowSpan={2}  w='100%' pb={10} pl={5} >
     <Center>
-      <Heading  as='h3' mt={10} mb={10}>Here are some volunteer suggestions based on your profile!</Heading>
+      <Heading  as='h3' mt={10} mb={5}>Here are some volunteer suggestions based on your profile!</Heading>
     </Center>
 
     <Grid templateColumns='repeat(1, 1fr)' gap={10} templateRows='repeat(3, 1fr)'>
@@ -17,7 +17,7 @@ const Suggestions = () => {
                     <Box>
                     <Center>
                     <Box boxSize='125px'>
-  <Image src='https://bit.ly/dan-abramov' alt='Dan Abramov' />
+  <Image src='https://bit.ly/dan-abramov' alt='Dan Abramov' borderRadius="10" />
 </Box>
                    
             
@@ -44,7 +44,7 @@ const Suggestions = () => {
                     <Box>
                     <Center>
                     <Box boxSize='125px'>
-  <Image src='https://bit.ly/dan-abramov' alt='Dan Abramov' />
+  <Image src='https://bit.ly/dan-abramov' alt='Dan Abramov' borderRadius="10" />
 </Box>
                    
             
@@ -71,7 +71,7 @@ const Suggestions = () => {
                     <Box>
                     <Center>
                     <Box boxSize='125px'>
-  <Image src='https://bit.ly/dan-abramov' alt='Dan Abramov' />
+  <Image src='https://bit.ly/dan-abramov' alt='Dan Abramov'  borderRadius="10"/>
 </Box>
                    
             
