@@ -25,7 +25,7 @@ const Suggestions = () => {
                 </Box>
                 <Center>
                 <Box>
-                 <Heading  as='h6' >Kola Tioluwani</Heading>
+                 <Heading as='h6' size='md' >Kola Tioluwani</Heading>
                 <Text fontSize='lg'>London, United Kingdom</Text>
                 <Text fontSize='lg'>Interests: Sketching, Cycling, Harry Potter, Italian food</Text>
                 </Box>
@@ -52,7 +52,7 @@ const Suggestions = () => {
                 </Box>
                 <Center>
                 <Box>
-                 <Heading  as='h6' >Kola Tioluwani</Heading>
+                 <Heading  as='h6' size='md' >Kola Tioluwani</Heading>
                 <Text fontSize='lg'>London, United Kingdom</Text>
                 <Text fontSize='lg'>Interests: Sketching, Cycling, Harry Potter, Italian food</Text>
                 </Box>
@@ -79,7 +79,7 @@ const Suggestions = () => {
                 </Box>
                 <Center>
                 <Box>
-                 <Heading  as='h6' >Kola Tioluwani</Heading>
+                 <Heading  as='h6' size='md' >Kola Tioluwani</Heading>
                 <Text fontSize='lg'>London, United Kingdom</Text>
                 <Text fontSize='lg'>Interests: Sketching, Cycling, Harry Potter, Italian food</Text>
                 </Box>
