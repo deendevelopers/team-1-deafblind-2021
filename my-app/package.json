@@ -21,7 +21,7 @@
     "styled-components": "^5.3.3",
     "web-vitals": "^1.0.1",
     "firebase": "8.5"
-     },
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
