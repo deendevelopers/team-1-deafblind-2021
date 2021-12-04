@@ -8,7 +8,7 @@ export default function Signup() {
     const [username, setUsername] = useState('');
     const { signup, isPending, error } = useSignup()
     
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
         e.preventDefault()
         signup(email, password, username)
     }
