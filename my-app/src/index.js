@@ -18,6 +18,7 @@ const colors = {
 const theme = extendTheme({ colors })
 
 ReactDOM.render(
+  
   <React.StrictMode>
   <ChakraProvider theme={theme}>
     <AuthContextProvider>
