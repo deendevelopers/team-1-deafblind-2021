@@ -7,9 +7,10 @@ import Home from './pages/Home.js';
 import About from './pages/About.js';
 import Signup from './pages/Signup.js';
 import Signin from './pages/Signin.js';
-import Profile from "./pages/Profile.js";
+import Profile from "./pages/Profile.jsx";
 import Footer from "./components/Footer/Footer.js";
 import FindVolunteers from "./pages/FindVolunteers.js";
+import ProfileVolunteerForm from './pages/ProfileVolunteerForm';
 
 
 function App() {
@@ -25,8 +26,9 @@ function App() {
          <Route path="/about" element={<About />}/>
          <Route path="/profile" element={<Profile />}/> 
          <Route path="/signin" element={user ? <Navigate replace to="/"/> : <Signin/> }/>
-         <Route path="/signup" element={user ? <Navigate replace to="/profile"/> : <Signup/>}/>
+         <Route path="/signup" element={user ? <Navigate replace to="/profilevolunteerform"/> : <Signup/>}/>
          <Route path='/findvolunteers' element={<FindVolunteers/>}/>
+         <Route path='/profilevolunteerform' element={<ProfileVolunteerForm/>}/>
        </Routes>
        </BrowserRouter>
        )}
