@@ -32,8 +32,8 @@ export default function Signup() {
       setPhotoError("Selected file must be an image!");
       return;
     }
-    if (selected.size > 100000) {
-      setPhotoError("Image file size must be less than 100kb");
+    if (selected.size > 500000) {
+      setPhotoError("Image file size must be less than 500kb");
       return;
     }
 
