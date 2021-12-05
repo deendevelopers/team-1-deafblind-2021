@@ -7,7 +7,7 @@
   background: #fff;
 }
 
-.btn-form {
+.btn {
   background: #fff;
   padding: 8px 12px;
   border-radius: 4px;
@@ -16,7 +16,7 @@
   font-size: 1em;
   border: 1px solid var(--primary-color);
 }
-.btn-form:hover {
+.btn:hover {
   color: #fff;
   background-color: var(--primary-color);
 }
