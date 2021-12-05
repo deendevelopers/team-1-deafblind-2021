@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Grid, Box } from "@chakra-ui/layout";
 import Suggestions from "../components/Dashboard/Suggestions";
-import TaskSuggestions from "../components/FindVolunteers/TaskSuggesions";
+import TaskSuggestions from "../components/FindVolunteers/TaskSuggestions";
 
 const FindVolunteers = () => {
   const [volunteers, setVolunteers] = useState({
@@ -46,7 +46,7 @@ const FindVolunteers = () => {
         <TaskSuggestions filterVolunteers={filterVolunteers} />
       </Box>
       <Box>
-        <Suggestions volunteers={volunteers.volunteers} />
+        <Suggestions volunteers={volunteers.volunteers} heading={'Here are some skilled volunteers ready to help you with your task!'}/>
       </Box>
     </Grid>
   );

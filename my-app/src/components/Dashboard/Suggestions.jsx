@@ -18,7 +18,7 @@ const Suggestions = (props) => {
     <GridItem rowSpan={2} w="100%" pb={10} pl={5}>
       <Center>
         <Heading as="h3" size="lg" mt={10} mb={5}>
-          Here are some volunteer suggestions based on your profile!
+          {props.heading}
         </Heading>
       </Center>
 
