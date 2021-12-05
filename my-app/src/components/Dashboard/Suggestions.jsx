@@ -25,45 +25,52 @@ const Suggestions = (props) => {
       <Grid
         templateColumns="repeat(1, 1fr)"
         gap={10}
-        templateRows="repeat(3, 1fr)"
+        templateRows="repeat(2, 1fr)"
       >
         {props.volunteers.map((volunteer) => {
           return (
             // <Center>
-              <Box>
+            <Box>
+              {/* <Center> */}
+              <Grid templateColumns="repeat(3, 1fr)">
+                {/* <Box > */}
                 {/* <Center> */}
-                  <Grid templateColumns="repeat(2, 1fr)">
-                    <Box>
-                      {/* <Center> */}
-                        <Box boxSize="125px">
-                          <Image
-                            src="https://bit.ly/dan-abramov"
-                            alt="Dan Abramov"
-                            borderRadius="10"
-                          />
-                        </Box>
-                      {/* </Center> */}
-                    </Box>
-                    {/* <Center> */}
-                      <Box>
-                        <Heading as="h6" size="md">
-                          {volunteer.name}
-                        </Heading>
-                        <Text fontSize="lg" mt={2}>
-                          {volunteer.location}
-                        </Text>
-                        <Text>Skills: {volunteer.skills}</Text>
-                        {volunteer.interests.map((interest) => {
-                          console.log(interest);
-                          return <Badge m='1' colorScheme="purple" variant="solid">
-                            {interest}
-                          </Badge>;
-                        })}
-                      </Box>
-                    {/* </Center> */}
-                  </Grid>
+                <GridItem colSpan={1}>
+                  <Box boxSize="125px">
+                    <Image
+                      src="https://bit.ly/dan-abramov"
+                      alt="Dan Abramov"
+                      borderRadius="10"
+                    />
+                  </Box>
+                </GridItem>
                 {/* </Center> */}
-              </Box>
+                {/* </Box> */}
+                {/* <Center> */}
+                <GridItem colSpan={2} >
+                  <Box>
+                    <Heading as="h6" size="md">
+                      {volunteer.name}
+                    </Heading>
+                    <Text fontSize="lg" mt={2}>
+                      {volunteer.location}
+                    </Text>
+                    <Text>Skills: {volunteer.skills}</Text>
+                    {volunteer.interests.map((interest) => {
+                      console.log(interest);
+                      return (
+                        <Badge m="1" colorScheme="purple" variant="solid">
+                          {interest}
+                        </Badge>
+                      );
+                    })}
+                  </Box>
+                </GridItem>
+
+                {/* </Center> */}
+              </Grid>
+              {/* </Center> */}
+            </Box>
             // </Center>
           );
         })}
