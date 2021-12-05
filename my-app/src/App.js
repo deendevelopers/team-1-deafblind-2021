@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Signup from './pages/Signup';
 import Signin from './pages/Signin';
-import Profile from "./pages/Profile";
+import ProfilePage from "./pages/ProfilePage";
 import Footer from "./components/Footer/Footer";
 import FindVolunteers from "./pages/FindVolunteers";
 import ProfileVolunteerForm from './pages/ProfileVolunteerForm';
@@ -24,7 +24,7 @@ function App() {
       <Routes>
          <Route path="/" element={<Home />}/>
          <Route path="/about" element={<About />}/>
-         <Route path="/profile" element={<Profile />}/> 
+         <Route path="/profile" element={<ProfilePage />}/> 
          <Route path="/signin" element={user ? <Navigate replace to="/"/> : <Signin/> }/>
          <Route path="/signup" element={user ? <Navigate replace to="/profilevolunteerform"/> : <Signup/>}/>
          <Route path='/findvolunteers' element={<FindVolunteers/>}/>

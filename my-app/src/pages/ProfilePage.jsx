@@ -8,7 +8,6 @@ const ProfilePage = () => {
   return (
     <React.Fragment>
       <Container maxW={'container.xl'} my={8}>
-        <ProfileHeader/>
         <main>
             <Flex justifyContent={'space-between'}>
               <Profile/>

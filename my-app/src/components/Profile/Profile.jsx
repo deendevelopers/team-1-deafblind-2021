@@ -25,57 +25,55 @@ const Profile = () => {
                 </Text>
             </Flex>
             <Flex direction={'column'} px={6} mt={-52}>
-                <Flex>
-                    <Text as="u" mb={8}>
-                       <b> Basic information:</b>
+                <Flex justifyContent="space-between">
+                    <Text as="u">
+                        Basic infromation
                     </Text>
-                    <Spacer/>
-                    <Box>
-                        <Text as="u" >
-                            edit personal information
+                    <Text>
+                    Edit personal information
+                    </Text>
+                </Flex>
+                <Flex w={400} justifyContent="space-between">
+                <Box pr={8}>
+                    <Flex direction={'column'}>
+                        <Text mb={8}>
+                            Location
                         </Text>
-                    </Box>
-                </Flex>
-                <Flex>
-                    <Text mr={8}>
-                        Location
-                    </Text>
-                    <Text>
-                        London, United Kingdom
-                    </Text>
-                </Flex>
-                <Flex >
-                    <Text mr={16}>
-                        Bio
-                    </Text>
-                    <Text>
-                        Lorem Ipsum
-                    </Text>
-                </Flex>
-                
-            </Flex>
-            <Flex px={6} mt={8}>
-                <Text mb={4} mr={12}>
-                    Needs 
-                </Text>
-                <List>
-                    <ListItem>
-                        <ListIcon as={FaSignLanguage}/>
-                        Lorem ipsum dolor sit amet</ListItem>
-                    <ListItem>Consectetur adipiscing elit</ListItem>
-                    <ListItem>Integer molestie lorem at massa</ListItem>
-                    <ListItem>Facilisis in pretium nisl aliquet</ListItem>
-                </List>
-            </Flex>
-            <Flex px={6} my={4}>
-                <Text mr={8}>
-                    Interests
-                </Text>
-                <Box>
-                    <Tag mr={4}>Cycling</Tag>
-                    <Tag>etc</Tag>
+                        <Text mb={8}>
+                            Bio
+                        </Text>
+                        <Text>
+                            Needs
+                        </Text>
+                    </Flex>
                 </Box>
-            </Flex>
+                <Box>
+                    <Flex direction={'column'}>
+                        <Text mb={8}>
+                            United Kingdom, London
+                        </Text>
+                        <Text mb={8}>
+                        
+
+My name is Susanne, and Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna dignissim laoreet tellus quis sit a dictumst. Aliquet amet phasellus sodales cursus varius pharetra.
+
+         Sign language profiency
+
+         Going to public events
+
+         Going shopping         
+
+
+                        </Text>
+                        <List>
+                            <ListItem>
+
+                            </ListItem>
+                        </List>
+                    </Flex>
+                </Box>
+                </Flex>
+                </Flex>
             </Flex>
         </React.Fragment>
         
