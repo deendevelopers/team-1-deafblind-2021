@@ -55,13 +55,13 @@ const FindVolunteers = () => {
     {
       name: "Kola Tioluwani",
       location: "London, United Kingdom",
-      skills: ["Sign language proficiency, ", "Car owner"],
+      skills: ["Sign language proficiency, "],
       interests: ["Sketching", "Cycling", "Harry Potter", "Italian food"],
     },
     {
       name: "Sarah Ashfield",
       location: "London, United Kingdom",
-      skills: ["Car owner"],
+      skills: ["Sign language proficiency, "],
       interests: ["Reading", "Gardening", "Cooking"],
     },
     {
@@ -79,7 +79,7 @@ const FindVolunteers = () => {
     {
       name: "Sameer Jain",
       location: "London, United Kingdom",
-      skills: ["Sign language proficiency, ", "Car owner"],
+      skills: ["Sign language proficiency, "],
       interests: ['Technology', 'Football', 'Literature', 'Coffee'],
     },
     {
@@ -96,8 +96,10 @@ const FindVolunteers = () => {
     },
   ];;
   const filterVolunteers = (task) => {
+    console.log(task)
     const filteredVolunteers = allVolunteers.filter((volunteer) => {
-      return volunteer.skills.includes("Sign language proficiency, ");
+      if(task === "making a phone call") return volunteer.skills.includes("Sign language proficiency, ")
+      return volunteer.skills.includes("Car owner");
     });
     setVolunteers({ volunteers: filteredVolunteers });
   };

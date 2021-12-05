@@ -11,6 +11,7 @@ import Profile from "./pages/Profile";
 import Footer from "./components/Footer/Footer";
 import FindVolunteers from "./pages/FindVolunteers";
 import ProfileVolunteerForm from './pages/ProfileVolunteerForm';
+import VolunteerProfile from "./pages/VolunteerProfile";
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
          <Route path="/signup" element={user ? <Navigate replace to="/profile"/> : <Signup/>}/>
          <Route path='/findvolunteers' element={<FindVolunteers/>}/>
          <Route path='/profilevolunteerform' element={<ProfileVolunteerForm/>}/>
+         <Route path='/volunteer' element={<VolunteerProfile/>} />
        </Routes>
        </BrowserRouter>
        )}

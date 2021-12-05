@@ -12,6 +12,7 @@ import {
   Image,
   Badge,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const Suggestions = (props) => {
   return (
@@ -32,7 +33,7 @@ const Suggestions = (props) => {
             // <Center>
             <Box>
               {/* <Center> */}
-              <Grid templateColumns="repeat(3, 1fr)">
+              <Grid templateColumns="repeat(4, 1fr)">
                 {/* <Box > */}
                 {/* <Center> */}
                 <GridItem colSpan={1}>
@@ -47,7 +48,7 @@ const Suggestions = (props) => {
                 {/* </Center> */}
                 {/* </Box> */}
                 {/* <Center> */}
-                <GridItem colSpan={2} >
+                <GridItem colSpan={2}>
                   <Box>
                     <Heading as="h6" size="md">
                       {volunteer.name}
@@ -65,6 +66,13 @@ const Suggestions = (props) => {
                       );
                     })}
                   </Box>
+
+                </GridItem>
+
+                <GridItem colSpan={1}>
+                <Button size="sm" border='full'>
+                      <Link to="/volunteer">{">"}</Link>
+                    </Button>
                 </GridItem>
 
                 {/* </Center> */}
@@ -116,6 +124,10 @@ const Suggestions = (props) => {
       </Center>
     </GridItem>
   );
+};
+
+const handleClick = () => {
+  console.log("clicking...");
 };
 
 export default Suggestions;

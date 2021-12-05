@@ -19,7 +19,6 @@ const TaskSuggestions = (props) => {
     "travelling",
   ]);
   const handleClick = (task) => {
-    console.log("I am being clicked and here is your task:", task);
     props.filterVolunteers(task);
   };
   return (
