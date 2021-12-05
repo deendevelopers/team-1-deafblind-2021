@@ -10,10 +10,7 @@ import {
 } from "./NavbarElements";
 import { useLogout } from '../../hooks/useLogout'
 import { useAuthContext } from '../../hooks/useAuthContext';
-import Avatar from "../Avatar";
-
-
-
+import AvatarPro from "../AvatarPro";
 
 const Navbar = () => {
     const { logout, isPending } = useLogout()
@@ -54,7 +51,7 @@ const Navbar = () => {
                 )}
                 {user && (
                 <>
-                <Avatar src={user.photoURL}/>
+                <AvatarPro src={user.photoURL}/>
                 {!isPending && <button className="btn" onClick={logout}>Logout</button>}
                 {isPending && <button className="btn" disabled>Logging out...</button>}
                 </>

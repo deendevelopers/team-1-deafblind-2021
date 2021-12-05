@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
-import Avatar from '../components/Avatar';
+import Avatar from '../components/AvatarPro';
 import { useAuthContext } from '../hooks/useAuthContext';
 import './ProfileVolunteerForm.css';
 

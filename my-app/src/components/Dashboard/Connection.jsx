@@ -12,7 +12,7 @@ const Connection = () => {
                   size='lg'
                   name='Kola Tioluwani'
                   src='https://bit.ly/tioluwani-kolawole'
-            />
+            /> 
              </Center>
             <Text mt={1} fontSize='lg'>Kola Tioluwani</Text>
           </Box>
