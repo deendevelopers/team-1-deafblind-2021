@@ -17,11 +17,6 @@ const colors = {
 
 const theme = extendTheme({ colors })
 
-const { initializeApp, applicationDefault, cert } = require('firebase-admin/app');
-const { getFirestore, Timestamp, FieldValue } = require('firebase-admin/firestore');
-
-initializeApp();
-
 ReactDOM.render(
   <React.StrictMode>
   <ChakraProvider theme={theme}>
