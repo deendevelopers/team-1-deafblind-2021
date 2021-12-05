@@ -1,8 +1,9 @@
 import React,  { useState } from "react";
 import { Heading , Text, Menu, MenuButton, MenuItem, MenuList, Button, Center} from "@chakra-ui/react";
 
-const TaskSuggestions = () => {
+const TaskSuggestions = (props) => {
     const [tasks, setTasks] = useState(['shopping', 'attending an event', 'making a phone call', 'travelling'])
+    const handleClick = (task) => {console.log('I am being clicked and here is your task:', task); props.filterVolunteers(task)}
     return (
         <Center>
             <section>
@@ -15,14 +16,15 @@ const TaskSuggestions = () => {
                     <MenuList>
                         {tasks.map(task => {
                             return(
-                                <MenuItem>{task}</MenuItem>
-                            )
-                        })}
+                                <MenuItem onClick={() => {handleClick(task)}}>{task}</MenuItem>
+                                )
+                            })}
                     </MenuList>
                 </Menu>
             </section>
         </Center>
     )
 };
+
 
 export default TaskSuggestions;

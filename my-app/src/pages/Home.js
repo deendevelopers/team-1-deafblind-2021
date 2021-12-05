@@ -6,6 +6,20 @@ import Welcome from "../components/Dashboard/Welcome";
 
 
 const Home = () => {
+  const volunteers = [
+    {
+      name: "Kola Tioluwani",
+      location: "London, United Kingdom",
+      skills: ["Sign language proficiency", "car owner"],
+      interests: ["Sketching", "Cycling", "Harry Potter", "Italian food"],
+    },
+    {
+      name: "Sarah Ashfield",
+      location: "London, United Kingdom",
+      skills: ["Sign language proficiency", "car owner"],
+      interests: ["Reading", "Gardening", "Cooking"],
+    },
+  ];
   return (
     <VStack>
         <Container maxW='container.xl'>
@@ -14,7 +28,7 @@ const Home = () => {
             <Welcome />
             <Connections />
             </Box>
-            <Suggestions />
+            <Suggestions volunteers={volunteers}/>
             
         </Grid>
         </Container>
