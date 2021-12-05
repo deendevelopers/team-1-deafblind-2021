@@ -1,11 +1,7 @@
 import React from "react";
 import { Container, VStack, Grid, Box, Heading, Center, Button, Avatar, Text, GridItem } from '@chakra-ui/react'
-import { useAuthContext } from "../../hooks/useAuthContext";
-import Users from './Users';
 
 const Connection = () => {
-  const { user } = useAuthContext();
-
   return (
       <Grid templateColumns='repeat(4, 1fr)'>
         <Center> 
