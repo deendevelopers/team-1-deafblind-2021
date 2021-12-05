@@ -10,61 +10,69 @@ import {
   Avatar,
   Text,
   Image,
+  Badge,
 } from "@chakra-ui/react";
 
 const Suggestions = (props) => {
-
-  
   return (
     <GridItem rowSpan={2} w="100%" pb={10} pl={5}>
       <Center>
         <Heading as="h3" size="lg" mt={10} mb={5}>
-          Here are some volunteer suggestions based on your profile!
+          {props.heading}
         </Heading>
       </Center>
 
       <Grid
         templateColumns="repeat(1, 1fr)"
         gap={10}
-        templateRows="repeat(3, 1fr)"
+        templateRows="repeat(2, 1fr)"
       >
-        {props.volunteers.map(volunteer => {
-          return(
-            <Center>
+        {props.volunteers.map((volunteer) => {
+          return (
+            // <Center>
             <Box>
-              <Center>
-                <Grid templateColumns="repeat(2, 1fr)">
-                  <Box>
-                    <Center>
-                      <Box boxSize="125px">
-                        <Image
-                          src="https://bit.ly/dan-abramov"
-                          alt="Dan Abramov"
-                          borderRadius="10"
-                        />
-                      </Box>
-                    </Center>
+              {/* <Center> */}
+              <Grid templateColumns="repeat(3, 1fr)">
+                {/* <Box > */}
+                {/* <Center> */}
+                <GridItem colSpan={1}>
+                  <Box boxSize="125px">
+                    <Image
+                      src="https://bit.ly/dan-abramov"
+                      alt="Dan Abramov"
+                      borderRadius="10"
+                    />
                   </Box>
-                  <Center>
-                    <Box>
-                      <Heading as="h6" size="md">
-                        {volunteer.name}
-                      </Heading>
-                      <Text fontSize="lg" mt={2}>
-                        {volunteer.location}
-                      </Text>
-                      <Text>Skills {volunteer.skills}</Text>
-                      <Text fontSize="lg" mt={2}>
-                       Interests {volunteer.interests}
-                      </Text>
-                    </Box>
-                  </Center>
-                </Grid>
-              </Center>
+                </GridItem>
+                {/* </Center> */}
+                {/* </Box> */}
+                {/* <Center> */}
+                <GridItem colSpan={2} >
+                  <Box>
+                    <Heading as="h6" size="md">
+                      {volunteer.name}
+                    </Heading>
+                    <Text fontSize="lg" mt={2}>
+                      {volunteer.location}
+                    </Text>
+                    <Text>Skills: {volunteer.skills}</Text>
+                    {volunteer.interests.map((interest) => {
+                      console.log(interest);
+                      return (
+                        <Badge m="1" colorScheme="purple" variant="solid">
+                          {interest}
+                        </Badge>
+                      );
+                    })}
+                  </Box>
+                </GridItem>
+
+                {/* </Center> */}
+              </Grid>
+              {/* </Center> */}
             </Box>
-          </Center>
-  
-          )
+            // </Center>
+          );
         })}
 
         {/* <Center>

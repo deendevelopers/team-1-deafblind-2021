@@ -8,12 +8,12 @@ const TaskSuggestions = (props) => {
         <Center>
             <section>
                 <Heading as='h3' size='lg'  mt={10} mb={5}>What do you need help with today?</Heading>
-                <Text size='md' isTruncated>Select the task you need help with from the menu below.</Text>
-                <Menu matchWidth='true' mt={10}>
-                    <MenuButton as={Button} rightIcon='>'>
+                <Text size='md' mb='4' isTruncated>Select the task you need help with from the menu below.</Text>
+                <Menu matchWidth='true' m='1' bg='gray.500'>
+                    <MenuButton mt='5' as={Button} rightIcon='>'>
                         select a task
                     </MenuButton>
-                    <MenuList>
+                    <MenuList m='1'>
                         {tasks.map(task => {
                             return(
                                 <MenuItem onClick={() => {handleClick(task)}}>{task}</MenuItem>

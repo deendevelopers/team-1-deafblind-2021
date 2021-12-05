@@ -5,7 +5,7 @@ import { useSignup } from '../hooks/useSignup';
 export default function Signup() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [username, setUsername] = useState('');
+    const [displayName, setDisplayName] = useState('');
     const [photo, setPhoto] = useState(null);
     const [photoError, setPhotoError] = useState(null);
 
@@ -35,7 +35,7 @@ export default function Signup() {
     
     const handleSubmit = (e) => {
         e.preventDefault()
-        signup(email, password, username, photo)
+        signup(email, password, displayName, photo)
     }
 
     return (
@@ -64,8 +64,8 @@ export default function Signup() {
                 <input
                 required
                 type="text"
-                onChange={(e) => setUsername(e.target.value)}
-                value={username}
+                onChange={(e) => setDisplayName(e.target.value)}
+                value={displayName}
                 />
             </label>
             <label>
@@ -77,8 +77,8 @@ export default function Signup() {
                 />
                 {photoError && <div className="error">{photoError}</div>}
             </label>
-            {!isPending && <button className="btn">Sign up</button>}
-            {isPending && <button className="btn" disabled>Loading...</button>}
+            {!isPending && <button className="btn-form">Sign up</button>}
+            {isPending && <button className="btn-form" disabled>Loading...</button>}
             {error && <div className="error">{error}</div>}
         </form>
         )

@@ -28,7 +28,7 @@ const Home = () => {
             <Welcome />
             <Connections />
             </Box>
-            <Suggestions volunteers={volunteers}/>
+            <Suggestions volunteers={volunteers} heading={'Here are some volunteer suggestions based on your profile!'}/>
             
         </Grid>
         </Container>

@@ -8,7 +8,7 @@ export const useSignup = () => {
   const [isPending, setIsPending] = useState(false)
   const { dispatch } = useAuthContext()
 
-  const signup = async (email, password, username, photo) => {
+  const signup = async (email, password, displayName, photo) => {
     setError(null)
     setIsPending(true)
   
@@ -26,12 +26,12 @@ export const useSignup = () => {
       const imgUrl = await img.ref.getDownloadURL()
 
       // add display name to user
-      await res.user.updateProfile({ username, photoURL: imgUrl })
+      await res.user.updateProfile({ displayName, photoURL: imgUrl })
 
       // create a user document
       await projectFirestore.collection('users').doc(res.user.uid).set({
         online: true,
-        username
+        displayName
       })
 
       // dispatch login action
