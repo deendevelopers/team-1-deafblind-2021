@@ -23,7 +23,7 @@ function App() {
       <Navbar />
       <Routes>
          <Route path="/" element={<Home />}/>
-         <Route path="/about" element={<About />}/>
+         {/* <Route path="/about" element={<About />}/> */}
          <Route path="/profile" element={<Profile />}/> 
          <Route path="/signin" element={user ? <Navigate replace to="/"/> : <Signin/> }/>
          <Route path="/signup" element={user ? <Navigate replace to="/profilevolunteerform"/> : <Signup/>}/>
