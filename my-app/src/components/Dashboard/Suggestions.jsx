@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, GridItem, Grid, Box, Heading, Button, Center, Avatar, Text, Image } from '@chakra-ui/react'
-import updateUser from "../../api";
 
 const Suggestions = () => {
   return (
@@ -96,7 +95,7 @@ const Suggestions = () => {
               
              
               <Center>
-              <Button bg='#DA5B4F' color="white" size='lg'  mt={10} onClick={updateUser()}>View all volunteer suggestions</Button>
+              <Button bg='#DA5B4F' color="white" size='lg'  mt={10}>View all volunteer suggestions</Button>
     </Center>
   </GridItem>
   );
