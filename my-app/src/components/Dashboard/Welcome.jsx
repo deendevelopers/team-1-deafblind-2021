@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, VStack, Grid, Box, Heading, Button, Center, Avatar, Text, GridItem,  } from '@chakra-ui/react'
-import { useAuthContext } from '../hooks/useAuthContext';
+import { useAuthContext } from '../../hooks/useAuthContext';
+
 
 const Welcome = () => {
   const { user } = useAuthContext()
