@@ -12,9 +12,6 @@ import { useLogout } from '../../hooks/useLogout'
 import { useAuthContext } from '../../hooks/useAuthContext';
 import AvatarPro from "../AvatarPro";
 
-
-
-
 const Navbar = () => {
     const { logout, isPending } = useLogout()
     const { user } = useAuthContext()
