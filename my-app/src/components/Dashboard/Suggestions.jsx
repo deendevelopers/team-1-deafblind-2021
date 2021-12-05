@@ -10,11 +10,10 @@ import {
   Avatar,
   Text,
   Image,
+  Badge,
 } from "@chakra-ui/react";
 
 const Suggestions = (props) => {
-
-  
   return (
     <GridItem rowSpan={2} w="100%" pb={10} pl={5}>
       <Center>
@@ -28,43 +27,45 @@ const Suggestions = (props) => {
         gap={10}
         templateRows="repeat(3, 1fr)"
       >
-        {props.volunteers.map(volunteer => {
-          return(
-            <Center>
-            <Box>
-              <Center>
-                <Grid templateColumns="repeat(2, 1fr)">
-                  <Box>
-                    <Center>
-                      <Box boxSize="125px">
-                        <Image
-                          src="https://bit.ly/dan-abramov"
-                          alt="Dan Abramov"
-                          borderRadius="10"
-                        />
-                      </Box>
-                    </Center>
-                  </Box>
-                  <Center>
+        {props.volunteers.map((volunteer) => {
+          return (
+            // <Center>
+              <Box>
+                {/* <Center> */}
+                  <Grid templateColumns="repeat(2, 1fr)">
                     <Box>
-                      <Heading as="h6" size="md">
-                        {volunteer.name}
-                      </Heading>
-                      <Text fontSize="lg" mt={2}>
-                        {volunteer.location}
-                      </Text>
-                      <Text>Skills {volunteer.skills}</Text>
-                      <Text fontSize="lg" mt={2}>
-                       Interests {volunteer.interests}
-                      </Text>
+                      {/* <Center> */}
+                        <Box boxSize="125px">
+                          <Image
+                            src="https://bit.ly/dan-abramov"
+                            alt="Dan Abramov"
+                            borderRadius="10"
+                          />
+                        </Box>
+                      {/* </Center> */}
                     </Box>
-                  </Center>
-                </Grid>
-              </Center>
-            </Box>
-          </Center>
-  
-          )
+                    {/* <Center> */}
+                      <Box>
+                        <Heading as="h6" size="md">
+                          {volunteer.name}
+                        </Heading>
+                        <Text fontSize="lg" mt={2}>
+                          {volunteer.location}
+                        </Text>
+                        <Text>Skills: {volunteer.skills}</Text>
+                        {volunteer.interests.map((interest) => {
+                          console.log(interest);
+                          return <Badge m='1' colorScheme="purple" variant="solid">
+                            {interest}
+                          </Badge>;
+                        })}
+                      </Box>
+                    {/* </Center> */}
+                  </Grid>
+                {/* </Center> */}
+              </Box>
+            // </Center>
+          );
         })}
 
         {/* <Center>
