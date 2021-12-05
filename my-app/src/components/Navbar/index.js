@@ -31,6 +31,9 @@ const Navbar = () => {
                 <NavLink to="/" activeStyle>
                     Home
                 </NavLink>
+                <NavLink to="/findvolunteers" activeStyle>
+                    Find Volunteers
+                </NavLink>
                 <NavLink to="/about" activeStyle>
                     About
                 </NavLink>

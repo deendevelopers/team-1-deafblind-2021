@@ -9,6 +9,7 @@ import Signup from './pages/Signup';
 import Signin from './pages/Signin';
 import Profile from "./pages/Profile";
 import Footer from "./components/Footer/Footer";
+import FindVolunteers from "./pages/FindVolunteers";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
          <Route path="/profile" element={<Profile />}/> 
          <Route path="/signin" element={user ? <Navigate replace to="/"/> : <Signin/> }/>
          <Route path="/signup" element={user ? <Navigate replace to="/profile"/> : <Signup/>}/>
+         <Route path='/findvolunteers' element={<FindVolunteers/>}/>
        </Routes>
        </BrowserRouter>
        )}

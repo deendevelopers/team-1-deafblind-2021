@@ -3,7 +3,7 @@ import { Container, VStack, Grid, Box, Heading, Center, Button, Avatar, Text, Gr
 
 const Connection = () => {
   return (
-      <Grid templateColumns='repeat(3, 1fr)'>
+      <Grid templateColumns='repeat(4, 1fr)'>
         <Center> 
           <Box>
           <Center>
@@ -30,6 +30,19 @@ const Connection = () => {
             <Text fontSize='lg'>Kola Tioluwani</Text>
           </Box>
         </Center>
+        <Center> 
+          <Box>
+          <Center>
+            <Avatar
+            bg="#D8D8D8"
+                  size='lg'
+                  name='Kola Tioluwani'
+                  src='https://bit.ly/tioluwani-kolawole'
+            />
+             </Center>
+            <Text fontSize='lg'>Kola Tioluwani</Text>
+          </Box>
+        </Center> 
         <Center> 
           <Box>
           <Center>
