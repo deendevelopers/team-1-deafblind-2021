@@ -102,48 +102,5 @@ export default function Signup() {
         </Box>
       </Box>
     </Flex>
-
-    // <form className="auth-form" onSubmit={handleSubmit}>
-    //     <h2>Sign up</h2>
-    //     <label>
-    //         <span>email:</span>
-    //         <input
-    //         required
-    //         type="email"
-    //         onChange={(e) => setEmail(e.target.value)}
-    //         value={email}
-    //         />
-    //     </label>
-    //     <label>
-    //         <span>password:</span>
-    //         <input
-    //         required
-    //         type="password"
-    //         onChange={(e) => setPassword(e.target.value)}
-    //         value={password}
-    //         />
-    //     </label>
-    //     <label>
-    //         <span>username:</span>
-    //         <input
-    //         required
-    //         type="text"
-    //         onChange={(e) => setDisplayName(e.target.value)}
-    //         value={displayName}
-    //         />
-    //     </label>
-    //     <label>
-    //         <span>Profile picture:</span>
-    //         <input
-    //         required
-    //         type="file"
-    //         onChange={handleFileChange}
-    //         />
-    //         {photoError && <div className="error">{photoError}</div>}
-    //     </label>
-    //     {!isPending && <button className="btn-form">Sign up</button>}
-    //     {isPending && <button className="btn-form" disabled>Loading...</button>}
-    //     {error && <div className="error">{error}</div>}
-    // </form>
   );
 }
