@@ -4,6 +4,7 @@ import Connections from "../components/Dashboard/Connections";
 import Suggestions from "../components/Dashboard/Suggestions";
 import Welcome from "../components/Dashboard/Welcome";
 
+
 const Home = () => {
   return (
     <VStack>
