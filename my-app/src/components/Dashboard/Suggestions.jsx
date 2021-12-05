@@ -58,7 +58,6 @@ const Suggestions = (props) => {
                     </Text>
                     <Text>Skills: {volunteer.skills}</Text>
                     {volunteer.interests.map((interest) => {
-                      console.log(interest);
                       return (
                         <Badge m="1" colorScheme="purple" variant="solid">
                           {interest}
@@ -66,13 +65,19 @@ const Suggestions = (props) => {
                       );
                     })}
                   </Box>
-
                 </GridItem>
 
                 <GridItem colSpan={1}>
-                <Button size="sm" border='full'>
-                      <Link to="/volunteer">{">"}</Link>
-                    </Button>
+                  <Button size="sm" border="full">
+                    <Link
+                      to={{
+                        pathname: `/${volunteer.name}`,
+                        state: { name: "hello world" },
+                      }}
+                    >
+                      {">"}
+                    </Link>
+                  </Button>
                 </GridItem>
 
                 {/* </Center> */}

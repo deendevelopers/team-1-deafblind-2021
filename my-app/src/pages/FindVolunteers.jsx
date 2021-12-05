@@ -94,7 +94,7 @@ const FindVolunteers = () => {
       skills: ["Sign language proficiency, ", "Car owner"],
       interests: ['Mountain climbing', 'Aerobics', 'Literature'],
     },
-  ];;
+  ];
   const filterVolunteers = (task) => {
     console.log(task)
     const filteredVolunteers = allVolunteers.filter((volunteer) => {

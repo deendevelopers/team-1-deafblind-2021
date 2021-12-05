@@ -30,7 +30,7 @@ function App() {
          <Route path="/signup" element={user ? <Navigate replace to="/profile"/> : <Signup/>}/>
          <Route path='/findvolunteers' element={<FindVolunteers/>}/>
          <Route path='/profilevolunteerform' element={<ProfileVolunteerForm/>}/>
-         <Route path='/volunteer' element={<VolunteerProfile/>} />
+         <Route path='/:volunteer' element={<VolunteerProfile/>} />
        </Routes>
        </BrowserRouter>
        )}
