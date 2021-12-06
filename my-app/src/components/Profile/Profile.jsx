@@ -1,9 +1,3 @@
-// import { Flex, Spacer } from "@chakra-ui/react";
-// import { Box, Container } from "@chakra-ui/layout";
-// import { Image } from "@chakra-ui/image";
-// import { Text } from "@chakra-ui/react";
-// import { List, ListItem, OrderedList, UnorderedList } from "@chakra-ui/react";
-
 import React from "react";
 
 import {
