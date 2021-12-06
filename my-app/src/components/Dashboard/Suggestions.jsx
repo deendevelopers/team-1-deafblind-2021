@@ -29,6 +29,7 @@ const Suggestions = (props) => {
         templateRows="repeat(2, 1fr)"
       >
         {props.volunteers.map((volunteer) => {
+          console.log(volunteer.image)
           return (
             // <Center>
             <Box>
@@ -37,13 +38,14 @@ const Suggestions = (props) => {
                 {/* <Box > */}
                 {/* <Center> */}
                 <GridItem colSpan={1}>
-                  <Box boxSize="125px">
-                    <Image
-                      src="https://bit.ly/dan-abramov"
-                      alt="Dan Abramov"
-                      borderRadius="10"
+                 
+                    <Avatar
+                      src={volunteer.image}
+                      alt="profile picture"
+                      borderRadius="0"
+                      size='xlg'
                     />
-                  </Box>
+                  
                 </GridItem>
                 {/* </Center> */}
                 {/* </Box> */}
