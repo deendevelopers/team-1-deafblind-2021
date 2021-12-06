@@ -65,13 +65,24 @@ export const NavMenu = styled.div`
 `;
 
 export const NavBtn = styled.nav`
-  display: flex;
-  align-items: center;
-  margin-right: 24px;
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
+color: black;
+border: 1px solid;
+border-radius: 10px;
+display: flex;
+align-items: center;
+text-decoration: none;
+padding: 0.5rem 2rem;
+height: 100%;
+cursor: pointer;
+&.active {
+  color:white;
+  background-color: black;
+  border: none;
+}
+&:hover {
+  color:white;
+  background-color: black;
+}
 `;
 
 export const NavBtnLink = styled(Link)`

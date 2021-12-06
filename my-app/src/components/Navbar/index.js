@@ -55,14 +55,14 @@ const Navbar = () => {
             <>
               <AvatarPro src={user.photoURL} />
               {!isPending && (
-                <button className="btn" onClick={logout}>
+                <NavBtn className="btn" onClick={logout}>
                   Logout
-                </button>
+                </NavBtn>
               )}
               {isPending && (
-                <button className="btn" disabled>
+                <NavBtn className="btn" disabled>
                   Logging out...
-                </button>
+                </NavBtn>
               )}
             </>
           )}
