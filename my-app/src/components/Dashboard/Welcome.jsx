@@ -29,7 +29,7 @@ const Welcome = () => {
         </GridItem>
         <GridItem colStart={2} colEnd={6} h="10">
           <Text bg="papayawhip" borderRadius="10" p={5}>
-          Welcome to Spectro, your platform to find people who care and help that matters!
+          Charlie has accepted your connection request! Send them a message.
           </Text>
         </GridItem>
       </Grid>
