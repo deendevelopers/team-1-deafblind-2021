@@ -9,20 +9,31 @@ import {
   Text,
   GridItem,
   Container,
+  Grid,
+  Image,
+  Flex,
 } from "@chakra-ui/react";
 
 const Welcome = () => {
   const { user } = useAuthContext();
   return (
-    <Container w="100%" mb={5} pb={5} pl={5} pr={5}>
-      <Heading as="h3" mt={10} mb={5}>
-        Hello, {user && user.displayName}. Need any help today?
+    <GridItem w="100%" mb={10} pb={5} pl={6} pr={5}>
+      <Heading as="h3" mt={10} mb={10}>
+        Hello, {user && user.displayName}!
       </Heading>
-      <Text w="80%" fontSize="xl">
-        Get the help you need from your existing connections, or reach out to
-        other volunteers!
-      </Text>
-    </Container>
+      <Grid templateColumns="repeat(5, 1fr)" gap={4}>
+        <GridItem colSpan={1} h="10">
+          <Center>
+          <Image src="notification-bell.svg" alt="notification bell" />
+          </Center>
+        </GridItem>
+        <GridItem colStart={2} colEnd={6} h="10">
+          <Text bg="papayawhip" borderRadius="10" p={5}>
+          Welcome to Spectro, your platform to find people who care and help that matters!
+          </Text>
+        </GridItem>
+      </Grid>
+    </GridItem>
   );
 };
 
