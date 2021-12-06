@@ -29,9 +29,9 @@ const Navbar = () => {
           <NavLink to="/findvolunteers" activeStyle>
             Find Volunteers
           </NavLink>
-          <NavLink to="/about" activeStyle>
+          {/* <NavLink to="/about" activeStyle>
             About
-          </NavLink>
+          </NavLink> */}
           {user && (
             <NavLink to="/profile" activeStyle>
               My Profile
