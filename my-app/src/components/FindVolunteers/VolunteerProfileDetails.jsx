@@ -73,7 +73,7 @@ const VolunteerProfileDetails = (props) => {
               <Flex direction={"column"} w={"100%"}>
                 <Flex px={8}>
                   <Box boxSize="sm" pr={4} w={36}>
-                    <Avatar
+                    <Image
                       size={"xl"}
                       src={
                         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWExi0XI71qBlLNnxKG6fCzDdyK5glNcU79A&usqp=CAU"
@@ -94,9 +94,14 @@ const VolunteerProfileDetails = (props) => {
                       }}
                     />
                   </Box>
-                  <Heading fontSize={"2xl"} fontFamily={"body"}>
-                    {volunteer.name}
-                  </Heading>
+                  <Flex direction={"column"}>
+                    <Heading fontSize={"2xl"} fontFamily={"body"}>
+                      {volunteer.name}
+                    </Heading>
+                    <Button colorScheme="teal" bg="#000000" color="white" m={5}>
+                      Send connection request
+                    </Button>
+                  </Flex>
                 </Flex>
 
                 <Flex direction={"column"} px={6} mt={-52}>
@@ -132,15 +137,18 @@ const VolunteerProfileDetails = (props) => {
                     <Text>Interests</Text>
                     {volunteer.interests.map((interest) => {
                       return (
-                        <Badge px={2} py={1} fontWeight={"400"}>
+                        <Badge
+                          px={2}
+                          py={1}
+                          fontWeight={"400"}
+                          colorScheme="purple"
+                          variant="solid"
+                        >
                           {interest}
                         </Badge>
                       );
                     })}
                   </Stack>
-                  <Button colorScheme="teal" bg="#000000" color="white" m={5}>
-                    Send connection request
-                  </Button>
                 </Flex>
               </Flex>
             );
