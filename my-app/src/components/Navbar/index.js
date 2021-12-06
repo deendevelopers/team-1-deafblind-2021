@@ -12,6 +12,7 @@ import { useLogout } from "../../hooks/useLogout";
 import { useAuthContext } from "../../hooks/useAuthContext";
 import AvatarPro from "../AvatarPro";
 import { Box, Image } from "@chakra-ui/react";
+import logo from "../../assets/logo.png";
 
 const Navbar = () => {
   const { logout, isPending } = useLogout();
@@ -20,7 +21,10 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-        <NavLogo to="/">Spectro</NavLogo>
+        <NavLogo to="/">
+          <Image src={logo} alt="Logo" h={10} />
+        </NavLogo>
+
         <Bars />
         <NavMenu>
           <NavLink to="/" activeStyle>
