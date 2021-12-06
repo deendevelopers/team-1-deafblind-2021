@@ -62,15 +62,14 @@ const ProfileInfo = () => {
               <Flex direction={"column"}>
                 <Text mb={8}>Location</Text>
                 <Text mb={8}>Bio</Text>
-                <Text>Needs</Text>
+                <Text mt={12}>Needs</Text>
               </Flex>
             </Box>
             <Box>
               <Flex direction={"column"}>
                 <Text mb={8}>London, UK</Text>
                 <Text mb={2}>
-                  My name is Samantha, and Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit.
+                  My name is Samantha. I have diabetes related eye conditions and partial hearing loss. I really enjoy being outdoors , usually cycling and require assistance to do so. 
                 </Text>
                 <List>
                   <ListItem>Sign language proficiency</ListItem>
@@ -79,28 +78,19 @@ const ProfileInfo = () => {
             </Box>
           </Flex>
           <Stack align={"center"} direction={"row"} mt={6}>
-            <Text>Interests</Text>
+            <Text mr={3}>Interests</Text>
             <Badge
-              px={2}
-              py={1}
-              bg={useColorModeValue("gray.50", "gray.800")}
-              fontWeight={"400"}
+             m="1" colorScheme="purple" variant="solid"
             >
               Art
             </Badge>
             <Badge
-              px={2}
-              py={1}
-              bg={useColorModeValue("gray.50", "gray.800")}
-              fontWeight={"400"}
+              m="1" colorScheme="purple" variant="solid"
             >
               Cycling
             </Badge>
             <Badge
-              px={2}
-              py={1}
-              bg={useColorModeValue("gray.50", "gray.800")}
-              fontWeight={"400"}
+            m="1" colorScheme="purple" variant="solid"
             >
               Nature
             </Badge>

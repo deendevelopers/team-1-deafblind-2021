@@ -15,8 +15,7 @@ const ProfileCard = () => {
         <b>Sarah Ahmed,</b> volunteer
       </Text>
       <Text>
-        “Samantha has been wonderful to help, Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Urna dignissim laoreet.”
+        “It has been an absolute pleasure to assist you. Your communication skills are excellent and you are simply a joy to be around!”
       </Text>
     </Flex>
   );
