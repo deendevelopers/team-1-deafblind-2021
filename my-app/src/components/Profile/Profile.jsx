@@ -1,4 +1,5 @@
 import React from "react";
+import { useAuthContext } from "../../hooks/useAuthContext";
 
 import {
   Heading,
@@ -17,8 +18,10 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { FaEdit } from "react-icons/fa";
+// import src from "@chakra-ui/icon/dist/declarations/src";
 
 const ProfileInfo = () => {
+  const { user } = useAuthContext();
   return (
     <React.Fragment>
       <Flex direction={"column"} w={"100%"}>
@@ -26,9 +29,7 @@ const ProfileInfo = () => {
           <Box boxSize="sm" pr={4} w={36}>
             <Avatar
               size={"xl"}
-              src={
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWExi0XI71qBlLNnxKG6fCzDdyK5glNcU79A&usqp=CAU"
-              }
+              src={user && user.photoURL}
               alt={"avatar image"}
               mb={4}
               pos={"relative"}
@@ -46,7 +47,7 @@ const ProfileInfo = () => {
             />
           </Box>
           <Heading fontSize={"2xl"} fontFamily={"body"}>
-            Samantha Wheeler
+            {user && user.displayName}
           </Heading>
         </Flex>
         <Flex direction={"column"} px={6} mt={-52}>
@@ -69,7 +70,7 @@ const ProfileInfo = () => {
               <Flex direction={"column"}>
                 <Text mb={8}>London, UK</Text>
                 <Text mb={2}>
-                  My name is Samantha. I have diabetes related eye conditions and partial hearing loss. I really enjoy being outdoors , usually cycling and require assistance to do so. 
+                  My name is {user && user.displayName}. I have diabetes related eye conditions and partial hearing loss. I really enjoy being outdoors , usually cycling and require assistance to do so. 
                 </Text>
                 <List>
                   <ListItem>Sign language proficiency</ListItem>
