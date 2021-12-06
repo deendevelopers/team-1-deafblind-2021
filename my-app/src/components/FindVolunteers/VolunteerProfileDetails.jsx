@@ -72,18 +72,19 @@ const VolunteerProfileDetails = (props) => {
   console.log("volunteer name:", props.volunteerName);
   return (
     <Container maxW={"container.xl"} my={8}>
-      <Grid templateColumns="repeat(3, 1fr)">
+      <Grid templateColumns="repeat(2, 1fr)">
         {allVolunteers.map((volunteer) => {
           if (volunteer.name == props.volunteerName)
             return (
+              <GridItem colSpan={1} m={3}>
+
+             
               <Flex direction={"column"} w={"100%"}>
                 <Flex px={8}>
                   <Box boxSize="sm" pr={4} w={36}>
                     <Image
                       size={"xl"}
-                      src={
-                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWExi0XI71qBlLNnxKG6fCzDdyK5glNcU79A&usqp=CAU"
-                      }
+                      src={volunteer.image}
                       alt={"avatar image"}
                       mb={4}
                       pos={"relative"}
@@ -104,7 +105,7 @@ const VolunteerProfileDetails = (props) => {
                     <Heading fontSize={"2xl"} fontFamily={"body"}>
                       {volunteer.name}
                     </Heading>
-                    <Button colorScheme="teal" bg="#000000" color="white" m={5}>
+                    <Button colorScheme="teal" bg="#000000" color="white" mt={5}>
                       Send connection request
                     </Button>
                   </Flex>
@@ -144,11 +145,7 @@ const VolunteerProfileDetails = (props) => {
                     {volunteer.interests.map((interest) => {
                       return (
                         <Badge
-                          px={2}
-                          py={1}
-                          fontWeight={"400"}
-                          colorScheme="purple"
-                          variant="solid"
+                        m="1" colorScheme="purple" variant="solid"
                         >
                           {interest}
                         </Badge>
@@ -157,10 +154,11 @@ const VolunteerProfileDetails = (props) => {
                   </Stack>
                 </Flex>
               </Flex>
+              </GridItem>
             );
         })}
 
-        <GridItem colSpan={2}>
+        <GridItem colSpan={1}>
           <Flex
             direction={"column"}
             bg={"#F1F1F1"}
@@ -174,10 +172,15 @@ const VolunteerProfileDetails = (props) => {
               <b>Sarah Ahmed,</b> Spectro user
             </Text>
             <Text>
-              “They has been wonderful as a helper, Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Urna dignissim laoreet.”
+              “What a wonderful helper!! I felt so comfortable. Not only did I get help with my travels but I have made a lifelong friend!”
+              <br></br>
+              Experience rating: 
+              <br></br>
+              <Image src='star-rating.svg' alt='star rating' mt={1}/>
             </Text>
           </Flex>
+            <Image src='helped.svg' m={5}/>
+            <Image src='reviews.svg' m={5}/>
         </GridItem>
       </Grid>
     </Container>
