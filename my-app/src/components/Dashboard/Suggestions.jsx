@@ -29,7 +29,6 @@ const Suggestions = (props) => {
         templateRows="repeat(2, 1fr)"
       >
         {props.volunteers.map((volunteer) => {
-          console.log(volunteer.image)
           return (
             // <Center>
             <Box>
@@ -131,10 +130,6 @@ const Suggestions = (props) => {
       </Center>
     </GridItem>
   );
-};
-
-const handleClick = () => {
-  console.log("clicking...");
 };
 
 export default Suggestions;

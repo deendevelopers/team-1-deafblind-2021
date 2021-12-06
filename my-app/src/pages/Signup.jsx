@@ -23,7 +23,6 @@ export default function Signup() {
   const handleFileChange = (e) => {
     setPhoto(null);
     let selected = e.target.files[0];
-    console.log(selected);
     if (!selected) {
       setPhotoError("Please select a file!");
       return;
@@ -39,7 +38,6 @@ export default function Signup() {
 
     setPhotoError(null);
     setPhoto(selected);
-    console.log("photo update !");
   };
 
   const handleSubmit = (e) => {

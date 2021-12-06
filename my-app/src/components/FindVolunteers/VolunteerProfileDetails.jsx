@@ -69,7 +69,6 @@ const VolunteerProfileDetails = (props) => {
       image: 'Jonathan-Deltevosky.svg'
     },
   ];
-  console.log("volunteer name:", props.volunteerName);
   return (
     <Container maxW={"container.xl"} my={8}>
       <Grid templateColumns="repeat(2, 1fr)">

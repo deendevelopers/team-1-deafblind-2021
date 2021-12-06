@@ -3,7 +3,6 @@ import AvatarPro from '../AvatarPro';
 
 export default function Users() {
     const { documents } = useCollection('users')
-    console.log(documents);
     return (
         
         <>
