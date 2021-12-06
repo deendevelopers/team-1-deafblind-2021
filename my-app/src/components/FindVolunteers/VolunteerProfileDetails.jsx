@@ -19,48 +19,54 @@ import {
 } from "@chakra-ui/react";
 
 const VolunteerProfileDetails = (props) => {
-  const allVolunteers = [
+  const allVolunteers =  [
     {
-      name: "Kola Tioluwani",
+      name: "Lee Smith",
       location: "London, United Kingdom",
-      skills: ["Sign language proficiency"],
+      skills: ["Sign language proficiency, "],
       interests: ["Sketching", "Cycling", "Harry Potter", "Italian food"],
-    },
-    {
-      name: "Sarah Ashfield",
-      location: "London, United Kingdom",
-      skills: ["Sign language proficiency", "Cooking"],
-      interests: ["Reading", "Gardening", "Cooking"],
+      image: 'Lee-Smith.svg'
     },
     {
       name: "Marvin Davis",
       location: "London, United Kingdom",
-      skills: ["Sign language proficiency", "Car owner"],
-      interests: ["Sketching", "Painting", "Camping", "Mountain climbing"],
+      skills: ["Sign language proficiency, ", "Car owner"],
+      interests: ['Sketching', 'Painting', 'Camping', 'Mountain climbing'],
+      image: 'Marvin-Davis.svg'
     },
     {
       name: "Mary Alexander",
       location: "London, United Kingdom",
-      skills: ["Car owner"],
-      interests: ["Books", "Tea", "Plants", "Pilates"],
+      skills: [ "Car owner"],
+      interests: ['Books', 'Tea', 'Plants', 'Pilates'],
+      image: 'Mary-Alexander.svg'
     },
     {
       name: "Sameer Jain",
       location: "London, United Kingdom",
-      skills: ["BSL", "Car owner"],
-      interests: ["Technology", "Football", "Literature", "Coffee"],
+      skills: ["Sign language proficiency, "],
+      interests: ['Technology', 'Football', 'Literature', 'Coffee'],
+      image: 'Sameer-Jain.svg'
+    },
+    {
+      name: "Sarah Ashfield",
+      location: "London, United Kingdom",
+      skills: ["Sign language proficiency, "],
+      interests: ["Reading", "Gardening", "Cooking"],
     },
     {
       name: "Peter O'Connor",
       location: "London, United Kingdom",
       skills: ["Car owner"],
-      interests: ["Shopping", "Fashion", "Literature", "Plants"],
+      interests: ['Shopping', 'Fashion', 'Literature', 'Plants'],
+      image: 'Peter-Oconnor.svg'
     },
     {
       name: "Jonathan Deltevosky",
       location: "London, United Kingdom",
-      skills: ["Sign language proficiency", "Car owner"],
-      interests: ["Mountain climbing", "Aerobics", "Literature"],
+      skills: ["Sign language proficiency, ", "Car owner"],
+      interests: ['Mountain climbing', 'Aerobics', 'Literature'],
+      image: 'Jonathan-Deltevosky.svg'
     },
   ];
   console.log("volunteer name:", props.volunteerName);
