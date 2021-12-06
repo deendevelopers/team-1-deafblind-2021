@@ -1,29 +1,134 @@
 import React from "react";
-import './Profile.css'
+import {
+  Heading,
+  Avatar,
+  Box,
+  Center,
+  Text,
+  Stack,
+  Button,
+  IconButton,
+  Badge,
+  useColorModeValue,
+} from "@chakra-ui/react";
+import { FaEdit } from "react-icons/fa";
 
 const Profile = () => {
   return (
-    <main>
-    <div className="card">
-        <div className="card-header">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWExi0XI71qBlLNnxKG6fCzDdyK5glNcU79A&usqp=CAU" className="profile-img"/>
-        </div>
-        <div className="card-body">
-            <h2 className="full-name">Samantha Wheeler</h2>
-            <p className="username">@samanthawheeler</p>
-            <button className="btn-flat">Send Connection request</button>
-            <h2 className="city">Location: London, UK</h2>
-            <br/>
-            <h2 className="desc">Bio: Hi my name is Samantha Lorem ipsum dolor sit amet</h2>
-            <br/>
-            <h2 className="desc">Needs: Sign Language Proficiency</h2>
-            <br/>
-       <p className="desc">Interests: Cycling, Art, Litterature, Nature</p>
-            
-        </div>
-       
-    </div>
-    </main>
+    <Center py={6}>
+      <Box
+        maxW={"320px"}
+        w={"full"}
+        bg={useColorModeValue("white", "gray.900")}
+        boxShadow={"2xl"}
+        rounded={"lg"}
+        p={6}
+        textAlign={"center"}
+      >
+        <Avatar
+          size={"xl"}
+          src={
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWExi0XI71qBlLNnxKG6fCzDdyK5glNcU79A&usqp=CAU"
+          }
+          alt={"Avatar Alt"}
+          mb={4}
+          pos={"relative"}
+          _after={{
+            content: '""',
+            w: 4,
+            h: 4,
+            bg: "green.300",
+            border: "2px solid white",
+            rounded: "full",
+            pos: "absolute",
+            bottom: 0,
+            right: 3,
+          }}
+        />
+
+        <Heading fontSize={"2xl"} fontFamily={"body"}>
+          Samantha Wheeler
+        </Heading>
+        <Text fontWeight={600} color={"gray.500"} mb={4}>
+          @samanthawheeler
+        </Text>
+        <Box textAlign={"right"}>
+          <IconButton aria-label="Edit profile" icon={<FaEdit />} />
+        </Box>
+        <Text px={3} textAlign={"left"}>
+          Location: London, UK
+        </Text>
+        <Text
+          textAlign={"left"}
+          color={useColorModeValue("gray.700", "gray.400")}
+          px={3}
+        >
+          Bio: Hi my name is Samantha
+        </Text>
+        <Text px={3} textAlign={"left"}>
+          Needs: Sign language proficiency
+        </Text>
+
+        <Stack align={"center"} justify={"center"} direction={"row"} mt={6}>
+          <Text>Interests:</Text>
+          <Badge
+            px={2}
+            py={1}
+            bg={useColorModeValue("gray.50", "gray.800")}
+            fontWeight={"400"}
+          >
+            Art
+          </Badge>
+          <Badge
+            px={2}
+            py={1}
+            bg={useColorModeValue("gray.50", "gray.800")}
+            fontWeight={"400"}
+          >
+            Cycling
+          </Badge>
+          <Badge
+            px={2}
+            py={1}
+            bg={useColorModeValue("gray.50", "gray.800")}
+            fontWeight={"400"}
+          >
+            Nature
+          </Badge>
+        </Stack>
+
+        <Stack mt={8} direction={"row"} spacing={4}>
+          <Button
+            flex={1}
+            fontSize={"sm"}
+            rounded={"full"}
+            _focus={{
+              bg: "gray.200",
+            }}
+          >
+            Message
+          </Button>
+          <Button
+            flex={1}
+            fontSize={"sm"}
+            rounded={"full"}
+            bg={"blue.400"}
+            color={"white"}
+            boxShadow={
+              "0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)"
+            }
+            _hover={{
+              bg: "blue.500",
+            }}
+            _focus={{
+              bg: "blue.500",
+            }}
+          >
+            Connect
+          </Button>
+        </Stack>
+      </Box>
+    </Center>
   );
 };
 
