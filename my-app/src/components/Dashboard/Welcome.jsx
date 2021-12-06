@@ -19,7 +19,7 @@ const Welcome = () => {
   return (
     <GridItem w="100%" mb={10} pb={5} pl={6} pr={5}>
       <Heading as="h3" mt={10} mb={10}>
-        Hello, {user && user.displayName}!
+        Hello {user && user.displayName}!
       </Heading>
       <Grid templateColumns="repeat(5, 1fr)" gap={4}>
         <GridItem colSpan={1} h="10">
