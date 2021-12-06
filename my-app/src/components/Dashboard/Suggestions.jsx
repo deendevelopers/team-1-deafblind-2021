@@ -125,7 +125,7 @@ const Suggestions = (props) => {
       </Grid>
 
       <Center>
-        <Button bg="#DA5B4F" color="white" size="lg" mt={10}>
+        <Button bg="#000000" color="white" size="lg" mt={10}>
           View all volunteer suggestions
         </Button>
       </Center>

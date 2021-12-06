@@ -8,7 +8,7 @@ const Connections = () => {
       <Heading as='h3' size='lg'  mt={20} mb={5} >My connections</Heading>
      <Connection />
       <Center>
-        <Button bg='#DA5B4F' color="white" size='lg' mt={10}>View all connections</Button>
+        <Button bg='#000000' color="white" size='lg' mt={10}>View all connections</Button>
       </Center>
     </GridItem>
   );
