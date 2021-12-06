@@ -1,42 +1,74 @@
 import React from "react";
 import {
-    Nav,
-    NavLogo,
-    NavLink,
-    Bars,
-    NavMenu,
-    NavBtn,
-    NavBtnLink,
+  Nav,
+  NavLogo,
+  NavLink,
+  Bars,
+  NavMenu,
+  NavBtn,
+  NavBtnLink,
 } from "./NavbarElements";
+import { useLogout } from "../../hooks/useLogout";
+import { useAuthContext } from "../../hooks/useAuthContext";
+import AvatarPro from "../AvatarPro";
+import { Box, Image } from "@chakra-ui/react";
+import logo from "../../assets/logo.png";
 
 const Navbar = () => {
-    return (
-        <>
-           <Nav>
-            <NavLogo to="/">
-                App Name
-            </NavLogo>
-            <Bars />
+  const { logout, isPending } = useLogout();
+  const { user } = useAuthContext();
 
-            <NavMenu>
-                <NavLink to="/" activeStyle>
-                    Home
-                </NavLink>
-                <NavLink to="/about" activeStyle>
-                    About
-                </NavLink>
-                <NavLink to="/profile" activeStyle>
-                    My Profile
-                </NavLink>
-                <NavLink to="/signin" activeStyle>
-                    Sign In
-                </NavLink>
-                <NavBtn>
-                    <NavBtnLink to="/sign-up">Sign Up</NavBtnLink>                
+  return (
+    <>
+      <Nav>
+        <NavLogo to="/">
+          <Image src={logo} alt="Logo" h={10} />
+        </NavLogo>
+
+        <Bars />
+        <NavMenu>
+          <NavLink to="/" activeStyle>
+            Home
+          </NavLink>
+          <NavLink to="/findvolunteers" activeStyle>
+            Find Volunteers
+          </NavLink>
+          {/* <NavLink to="/about" activeStyle>
+            About
+          </NavLink> */}
+          {user && (
+            <NavLink to="/profile" activeStyle>
+              My Profile
+            </NavLink>
+          )}
+          {!user && (
+            <>
+              <NavLink to="/signin" activeStyle>
+                Login
+              </NavLink>
+              <NavLink to="/signup" activeStyle>
+                Join Us
+              </NavLink>
+            </>
+          )}
+          {user && (
+            <>
+              <AvatarPro src={user.photoURL} />
+              {!isPending && (
+                <NavBtn className="btn" onClick={logout}>
+                  Logout
                 </NavBtn>
-            </NavMenu> 
-           </Nav> 
-        </>
-    );
+              )}
+              {isPending && (
+                <NavBtn className="btn" disabled>
+                  Logging out...
+                </NavBtn>
+              )}
+            </>
+          )}
+        </NavMenu>
+      </Nav>
+    </>
+  );
 };
 export default Navbar;

@@ -25,12 +25,10 @@ export const useCollection = (collection, _query, _orderBy) => {
       snapshot.docs.forEach(doc => {
         results.push({...doc.data(), id: doc.id})
       });
-      
       // update state
       setDocuments(results)
       setError(null)
     }, error => {
-      console.log(error)
       setError('could not fetch the data')
     })
 

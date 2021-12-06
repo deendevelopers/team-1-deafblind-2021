@@ -1,0 +1,22 @@
+.auth-form {
+  max-width: 360px;
+  margin: 60px auto;
+  padding: 40px;
+  border: 1px solid #ddd;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05);
+  background: #fff;
+}
+
+.btn-form {
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 1em;
+  border: 1px solid var(--primary-color);
+}
+.btn-form:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+}

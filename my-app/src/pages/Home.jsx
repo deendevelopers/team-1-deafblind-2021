@@ -1,61 +1,71 @@
 import React from "react";
 import { Container, VStack, Grid, Box, Heading, Button, Center, Avatar, Text, GridItem } from '@chakra-ui/react'
+import Connections from "../components/Dashboard/Connections";
+import Suggestions from "../components/Dashboard/Suggestions";
+import Welcome from "../components/Dashboard/Welcome";
+
 
 const Home = () => {
+  const volunteers =[
+    {
+      name: "Lee Smith",
+      location: "London, United Kingdom",
+      skills: ["Sign language proficiency, "],
+      interests: ["Sketching", "Cycling", "Harry Potter", "Italian food"],
+      image: 'Lee-Smith.svg'
+    },
+    {
+      name: "Marvin Davis",
+      location: "London, United Kingdom",
+      skills: ["Sign language proficiency, ", "Car owner"],
+      interests: ['Sketching', 'Painting', 'Camping', 'Mountain climbing'],
+      image: 'Marvin-Davis.svg'
+    },
+    {
+      name: "Mary Alexander",
+      location: "London, United Kingdom",
+      skills: [ "Car owner"],
+      interests: ['Books', 'Tea', 'Plants', 'Pilates'],
+      image: 'Mary-Alexander.svg'
+    },
+    {
+      name: "Sameer Jain",
+      location: "London, United Kingdom",
+      skills: ["Sign language proficiency, "],
+      interests: ['Technology', 'Football', 'Literature', 'Coffee'],
+      image: 'Sameer-Jain.svg'
+    },
+    {
+      name: "Sarah Ashfield",
+      location: "London, United Kingdom",
+      skills: ["Sign language proficiency, "],
+      interests: ["Reading", "Gardening", "Cooking"],
+    },
+    {
+      name: "Peter O'Connor",
+      location: "London, United Kingdom",
+      skills: ["Car owner"],
+      interests: ['Shopping', 'Fashion', 'Literature', 'Plants'],
+      image: 'Peter-Oconnor.svg'
+    },
+    {
+      name: "Jonathan Deltevosky",
+      location: "London, United Kingdom",
+      skills: ["Sign language proficiency, ", "Car owner"],
+      interests: ['Mountain climbing', 'Aerobics', 'Literature'],
+      image: 'Jonathan-Deltevosky.svg'
+    },
+  ];
   return (
     <VStack>
         <Container maxW='container.xl'>
           <Grid templateColumns='repeat(2, 1fr)' gap={10}>
-            <Box w='100%' bg='blue.100'>
-              <Center>
-                <Heading as='h2'  mt={10} mb={10} >My connections</Heading>
-              </Center>
-
-              <Grid mb={5} templateColumns='repeat(3, 1fr)'>
-                  <Center> 
-                    <Box>
-                    <Avatar
-                  size='xl'
-                  name='Kola Tioluwani'
-                  src='https://bit.ly/tioluwani-kolawole'
-                />
-                <Text fontSize='lg'>Kola Tioluwani</Text>
-                    </Box>
-                  </Center>
-        
-            <Center> 
-              <Box>
-                <Avatar
-                  size='xl'
-                  name='Kola Tioluwani'
-                  src='https://bit.ly/tioluwani-kolawole'
-                />
-                <Text fontSize='lg'>Kola Tioluwani</Text>
+            <Box>
+            <Welcome />
+            <Connections />
             </Box>
-            </Center>
-            <Center> 
-              <Box>
-                <Avatar
-                  size='xl'
-                  name='Kola Tioluwani'
-                  src='https://bit.ly/tioluwani-kolawole'
-                />
-                <Text fontSize='lg'>Kola Tioluwani</Text>
-            </Box>
-            </Center>
-              
-              </Grid>
-              
-              <Button colorScheme='pink' size='lg'>View all connections</Button>
-            </Box>
-          
-            <Box w='100%' bg='blue.100'>
-              <Center>
-                <Heading  as='h2' mt={10} mb={10}>Here are some volunteer suggestions based on your profile!</Heading>
-              </Center>
-         
-              <Button colorScheme='pink' size='lg'>View all volunteer suggestions</Button>
-            </Box>
+            <Suggestions volunteers={volunteers} heading={'Here are some volunteer suggestions based on your profile!'}/>
+            
         </Grid>
         </Container>
        
