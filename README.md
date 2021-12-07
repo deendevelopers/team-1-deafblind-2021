@@ -19,6 +19,10 @@ link: https://team-1-deafblind-2021.web.app/
 **Madihah (Junior Dev)**
 - [GitHub](https://github.com/DoodleDeBug)
 
+**Humayraa (Developer)**
+- [GitHub](https://github.com/hy-m)
+- [LinkedIn](https://www.linkedin.com/in/humayraa-m/)
+
 ## Tech Used:
 
 - React
