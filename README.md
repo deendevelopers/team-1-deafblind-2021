@@ -37,6 +37,9 @@ link: https://team-1-deafblind-2021.web.app/
 This will run the app in the development mode. Open http://localhost:3000 to view it in the browser.
 
 ## Mockups:
+[prototype](https://www.figma.com/proto/eoBjMjL9wKxUKJ6W8eESS9/Spectro-proto?page-id=0%3A1&node-id=105%3A701&viewport=241%2C48%2C0.26&scaling=scale-down&starting-point-node-id=105%3A503)
+
+[hi-fi wireframe](https://www.figma.com/file/eoBjMjL9wKxUKJ6W8eESS9/Spectro-proto?node-id=0%3A1)
 
 ## Screenshots:
 
