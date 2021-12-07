@@ -17,7 +17,7 @@ link: https://team-1-deafblind-2021.web.app/
 - LinkedIn: linkedin.com/in/adilh1/ 
 
 **Madihah(Junior Dev)**
-- (GitHub)[https://github.com/DoodleDeBug]
+- [GitHub](https://github.com/DoodleDeBug)
 
 ## Tech Used:
 
