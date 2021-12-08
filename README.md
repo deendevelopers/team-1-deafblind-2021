@@ -50,5 +50,9 @@ This will run the app in the development mode. Open http://localhost:3000 to vie
 [hi-fi wireframe](https://www.figma.com/file/eoBjMjL9wKxUKJ6W8eESS9/Spectro-proto?node-id=0%3A1)
 
 ## Screenshots:
+![image](https://user-images.githubusercontent.com/75613073/145238280-a9136f65-39ac-454a-9484-c13d64909826.png)
+![image](https://user-images.githubusercontent.com/75613073/145238356-f1814828-63fc-4825-85cb-56c00750b7a8.png)
+![image](https://user-images.githubusercontent.com/75613073/145238438-e4565743-ecf8-4182-be1b-cc2407d5f75b.png)
+
 
 
