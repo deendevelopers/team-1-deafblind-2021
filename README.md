@@ -16,16 +16,16 @@ link: https://team-1-deafblind-2021.web.app/
 - Twitter: @Adilagile
 - [LinkedIn](http://linkedin.com/in/adilh1/)
 
-**Madihah (Junior Dev)**
-- [GitHub](https://github.com/DoodleDeBug)
-
 **Humayraa (Developer)**
 - [GitHub](https://github.com/hy-m)
 - [LinkedIn](https://www.linkedin.com/in/humayraa-m/)
 
-**Nouria (Junior Developper)**
+**Nouria (Junior Developer)**
 - [GitHub](https://github.com/NouriaC)
 - [LinkedIn](https://uk.linkedin.com/in/nouriachaouy)
+
+**Madihah (Junior Developer)**
+- [GitHub](https://github.com/DoodleDeBug)
 
 ## Tech Used:
 
