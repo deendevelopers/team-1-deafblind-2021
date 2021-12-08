@@ -23,6 +23,10 @@ link: https://team-1-deafblind-2021.web.app/
 - [GitHub](https://github.com/hy-m)
 - [LinkedIn](https://www.linkedin.com/in/humayraa-m/)
 
+**Nouria (Junior Developper)**
+- [GitHub](https://github.com/NouriaC)
+- [LinkedIn](https://uk.linkedin.com/in/nouriachaouy)
+
 ## Tech Used:
 
 - React
