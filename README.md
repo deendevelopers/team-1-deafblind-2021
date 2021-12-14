@@ -27,6 +27,10 @@ link: https://team-1-deafblind-2021.web.app/
 **Madihah (Junior Developer)**
 - [GitHub](https://github.com/DoodleDeBug)
 
+**Khorram Khondkar (Software developer)
+- [Github](https://github.com/khorramk)
+- [LinkedIn](https://www.linkedin.com/in/khorram-khondkar-99b652138/)
+
 ## Tech Used:
 
 - React
