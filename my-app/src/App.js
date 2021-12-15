@@ -12,7 +12,8 @@ import Footer from "./components/Footer/Footer";
 import FindVolunteers from "./pages/FindVolunteers";
 import ProfileVolunteerForm from './pages/ProfileVolunteerForm';
 import VolunteerProfile from "./pages/VolunteerProfile";
-
+import { VoiceOver} from "./components/Landing/VoiceOver";
+import { ChooseColour } from "./components/Landing/ChooseColour";
 
 function App() {
   
@@ -24,6 +25,7 @@ function App() {
       <Navbar />
       <Routes>
          <Route path="/" element={<Home />}/>
+         <Route path="/landing" element={<ChooseColour/>}/>
          {/* <Route path="/about" element={<About />}/> */}
          <Route path="/profile" element={<Profile />}/> 
          <Route path="/signin" element={user ? <Navigate replace to="/"/> : <Signin/> }/>
