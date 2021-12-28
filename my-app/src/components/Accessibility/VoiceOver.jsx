@@ -1,4 +1,4 @@
-import { Img, Box } from '@chakra-ui/react';
+import { Img, Box, Button } from '@chakra-ui/react';
 import stickman from '../../assets/stickman.png';
 
 /**
@@ -26,11 +26,13 @@ const isVoiceOn = (toggleSwitch) => {
 export const VoiceOver = (props) => {
     const {voiceOn} = props;
     return (
-        <Box flex={'column'} justifyContent={'center'}>
+        <Button display={'flex'} flexDirection={'column'} bg={'white'} justifyContent={'center'}>
             <Box px={5}>
-            <Img src={stickman}/>
+                <Img src={stickman}/>
             </Box>
+            <Box>
             {isVoiceOn(voiceOn)}
-        </Box>
+            </Box>
+        </Button>
     )
 }

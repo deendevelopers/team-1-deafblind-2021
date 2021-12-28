@@ -10,7 +10,7 @@ export const AdjustTextSize = (props) => {
     const sizeOfFont = textSize | 20;
 
     return (
-        <Box fontSize={sizeOfFont}>
+        <Box display={'block'} fontSize={sizeOfFont} ml={3}>
             <Text>
                 A
             </Text>
